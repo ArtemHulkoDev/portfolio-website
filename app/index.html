@@ -4,11 +4,173 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Artem Gulko</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+
+<!-- header start -->
+
+<header id="home" class="header">
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+  <div class="header__title">
+    Hello, I'm Artem Gulko.
+    <span>I'm junior front-end developer.</span>
+    <a class="header__anchor" href="#portfolio">View my portfolio</a>
+  </div>
+</header>
+
+<!-- header end -->
+<!-- navigation start -->
+
+<nav class="nav">
+  <div class="container">
+    <ul class="nav__inner">
+      <li><a name="HOME" class="home" href="#home">Home</a></li>
+      <li><a name="ABOUT ME" class="about-me" href="#about">About Me</a></li>
+      <li><a name="MY SKILLS" class="my-skills" href="#skills">My skills</a></li>
+      <li><a name="PORTFOLIO" class="portfolio" href="#portfolio">Portfolio</a></li>
+      <li><a name="CONTACTS" class="contacts" href="#contacts">Contacts</a></li>
+    </ul> 
+  </div>
+</nav>
+
+<!-- navigation end -->
+<!-- about section start -->
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="about__inner">
+      <div class="about__title">About Me</div>
+      <div class="title-line"></div>
+      <div class="about__info">
+        <img class="about__img" src="images/my-photo.jpg" alt="">
+        <div class="about__text">
+          I'm just at the beginning of my web-developer career and I would like to get a job in an IT company that will be my second family. I'm very passionate about creating well-designed, functional, and adaptive websites and apps.
+          Well-organized person, a problem solver, high attention to detail, good communication skills.
+          Fan of MMA, outdoor activities, movies.
+        </div>
+      </div>
+    </div>
+    <div class="about__items">
+      <div class="about__item">
+        <div class="icons icon-mobile"></div>
+        <div class="about__item-title">Responsive</div>
+        <div class="about__item-text">My layouts will work on any device, big or small.</div>
+      </div>
+      <div class="about__item">
+        <div class="icons icon-lightbulb-o"></div>
+        <div class="about__item-title">Intuitive</div>
+        <div class="about__item-text">Strong preference for easy to use, intuitive UX/UI.</div>
+      </div>
+      <div class="about__item">
+        <div class="icons icon-rocket"></div>
+        <div class="about__item-title">Dynamic</div>
+        <div class="about__item-text">Websites don't have to be static, I love making pages come to life.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- about section end -->
+<!-- skills section start -->
+
+<section id="skills" class="skills">
+  <div class="container">
+    <div class="skills__inner">
+      <div class="skills__title">
+        My Skills
+      </div>
+      <div class="skills-line"></div>
+      <ul class="skills__list">
+        <li>
+          <span class="skill__text" name="HTML">HTML</span>
+          <input type="text" class="js-range-slider" name="my_range" value="" data-from="90">
+        </li>
+        <li>
+          <span class="skill__text" name="CSS">CSS</span>
+          <input type="text" class="js-range-slider" name="my_range" value="" data-from="90">
+        </li>
+        <li>
+          <span class="skill__text" name="JAVASCRIPT">Javascript</span>
+          <input type="text" class="js-range-slider" name="my_range" value="" data-from="40">
+        </li>
+        <li>
+          <span class="skill__text" name="JQUERY">JQuery</span>
+          <input type="text" class="js-range-slider" name="my_range" value="" data-from="60">
+        </li>
+        <li>
+          <span class="skill__text" name="SASS/SCSS">Sass/SCSS</span>
+          <input type="text" class="js-range-slider" name="my_range" value="" data-from="80">
+        </li>
+        <li>
+          <span class="skill__text" name="GULP">Gulp</span>
+          <input type="text" class="js-range-slider" name="my_range" value="" data-from="70">
+        </li>
+        <li>
+          <span class="skill__text" name="GIT">Git</span>
+          <input type="text" class="js-range-slider" name="my_range" value="" data-from="70">
+        </li>
+        <li>
+          <span class="skill__text" name="PHOTOSHOP/FIGMA">Photoshop/Figma</span>
+          <input type="text" class="js-range-slider" name="my_range" value="" data-from="80">
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- skills section end -->
+<!-- portfolio section start -->
+
+<section id="portfolio" class="works">
+  <div class="container">
+    <div class="works__inner">
+      <div class="works__title">
+        My works
+      </div>
+      <div class="works-line"></div>
+      <div class="works__items">
+        <a href="https://floristry.artem-gulko.website" class="works__item" style="background-image: url(images/portfolio-item1.jpg);">
+          
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- portfolio section end -->
+<!-- footer start -->
+
+<footer id="contacts" class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="contact__email">
+        <span>My email</span>
+        <a href="mailto:agulko96@gmail.com">agulko96@gmail.com</a>
+      </div>
+      <div class="contact__phone">
+        <span>My phone number</span>
+        <a href="tel:+380957847561">+380957847561</a>
+      </div>
+      <div class="social">
+        <div class="social__title">My socials</div>
+        <div class="social__icons">
+          <a href="#" class="social__icon icon-github"></a>
+          <a href="#" class="social__icon icon-linkedin"></a>
+          <a href="#" class="social__icon icon-paper-plane"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- footer end -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
