@@ -12,6 +12,20 @@
 </head>
 <body>
 
+<div id="cube-loader">
+  <div class="caption">
+    <div class="cube-loader">
+      <div class="cube loader-1"></div>
+      <div class="cube loader-2"></div>
+      <div class="cube loader-4"></div>
+      <div class="cube loader-3"></div>
+    </div>
+  </div>
+</div>
+
+<div id="progressbar"></div>  
+<div id="scrollPath"></div>
+
 <!-- header start -->
 
 <header id="home" class="header">
@@ -36,7 +50,12 @@
       <li><a name="MY SKILLS" class="my-skills" href="#skills">My skills</a></li>
       <li><a name="PORTFOLIO" class="portfolio" href="#portfolio">Portfolio</a></li>
       <li><a name="CONTACTS" class="contacts" href="#contacts">Contacts</a></li>
-    </ul> 
+    </ul>
+    <div class="nav-btn">
+      <div class="nav-row"></div>
+      <div class="nav-row"></div>
+      <div class="nav-row"></div>
+    </div> 
   </div>
 </nav>
 
@@ -46,9 +65,9 @@
 <section id="about" class="about">
   <div class="container">
     <div class="about__inner">
-      <div class="about__title">About Me</div>
-      <div class="title-line"></div>
-      <div class="about__info">
+      <div class="about__title" data-aos="fade-right">About Me</div>
+      <div class="title-line" data-aos="fade-right"></div>
+      <div class="about__info" data-aos="fade-up">
         <img class="about__img" src="images/my-photo.jpg" alt="">
         <div class="about__text">
           I'm just at the beginning of my web-developer career and I would like to get a job in an IT company that will be my second family. I'm very passionate about creating well-designed, functional, and adaptive websites and apps.
@@ -57,11 +76,11 @@
         </div>
       </div>
     </div>
-    <div class="about__items">
+    <div class="about__items" data-aos="fade-up">
       <div class="about__item">
         <div class="icons icon-mobile"></div>
         <div class="about__item-title">Responsive</div>
-        <div class="about__item-text">My layouts will work on any device, big or small.</div>
+        <div class="about__item-text">My layouts will work on any device.</div>
       </div>
       <div class="about__item">
         <div class="icons icon-lightbulb-o"></div>
@@ -83,11 +102,11 @@
 <section id="skills" class="skills">
   <div class="container">
     <div class="skills__inner">
-      <div class="skills__title">
+      <div class="skills__title" data-aos="fade-right">
         My Skills
       </div>
-      <div class="skills-line"></div>
-      <ul class="skills__list">
+      <div class="skills-line" data-aos="fade-right"></div>
+      <ul class="skills__list" data-aos="fade-up">
         <li>
           <span class="skill__text" name="HTML">HTML</span>
           <input type="text" class="js-range-slider" name="my_range" value="" data-from="90">
@@ -117,7 +136,7 @@
           <input type="text" class="js-range-slider" name="my_range" value="" data-from="70">
         </li>
         <li>
-          <span class="skill__text" name="PHOTOSHOP/FIGMA">Photoshop/Figma</span>
+          <span class="skill__text" name="PHOTOSHOP">Photoshop</span>
           <input type="text" class="js-range-slider" name="my_range" value="" data-from="80">
         </li>
       </ul>
@@ -131,14 +150,16 @@
 <section id="portfolio" class="works">
   <div class="container">
     <div class="works__inner">
-      <div class="works__title">
+      <div class="works__title" data-aos="fade-right">
         My works
       </div>
-      <div class="works-line"></div>
+      <div class="works-line" data-aos="fade-right"></div>
       <div class="works__items">
-        <a href="https://floristry.artem-gulko.website" class="works__item" style="background-image: url(images/portfolio-item1.jpg);">
-          
-        </a>
+        <div class="works__item-wrapper" data-aos="fade-up">
+          <div class="works__item" style="background-image: url(images/portfolio-item1.jpg);"> 
+            <a href="https://floristry.artem-gulko.website" target="_blank" class="works__button">View Project</a>        
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -149,7 +170,7 @@
 
 <footer id="contacts" class="footer">
   <div class="container">
-    <div class="footer__inner">
+    <div class="footer__inner" data-aos="zoom-in">
       <div class="contact__email">
         <span>My email</span>
         <a href="mailto:agulko96@gmail.com">agulko96@gmail.com</a>
@@ -161,9 +182,9 @@
       <div class="social">
         <div class="social__title">My socials</div>
         <div class="social__icons">
-          <a href="#" class="social__icon icon-github"></a>
-          <a href="#" class="social__icon icon-linkedin"></a>
-          <a href="#" class="social__icon icon-paper-plane"></a>
+          <a href="https://github.com/ArtemGulkoDev" target="_blank" class="social__icon icon-github"></a>
+          <a href="https://www.linkedin.com/in/ArtemGulkoDev/" target="_blank" class="social__icon icon-linkedin"></a>
+          <a href="https://t.me/artemgulko" target="_blank" class="social__icon icon-paper-plane"></a>
         </div>
       </div>
     </div>

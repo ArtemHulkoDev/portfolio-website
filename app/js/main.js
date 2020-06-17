@@ -1,5 +1,22 @@
 $(function (){
 
+  window.onload = function () {
+    setInterval(() => {
+      document.body.classList.add('loaded__hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded__hiding');
+      }, 1000);
+    }, 2000);
+  }
+
+  var progress = document.getElementById('progressbar');
+  var totalHeight = document.body.scrollHeight - window.innerHeight;
+  window.onscroll = function(){
+    var progressHeight = (window.pageYOffset / totalHeight) * 100;
+    progress.style.height = progressHeight + "%";
+  }
+
   $(".home").on("click", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
@@ -72,17 +89,30 @@ $(function (){
     min: 0,
     max: 100,
     grid: true,
-    postfix: "%"
+    postfix: "%",
+    from_fixed: true
   });
   
   $(window).scroll(function(){
     var docscroll=$(document).scrollTop();
     if(docscroll>$(window).height()){
-      $('nav').css({'height': $('nav').height(),'width': $('nav').width()}).addClass('fixed');
+      $('nav').addClass('fixed');
     }else{
       $('nav').removeClass('fixed');
     }
-  });  
+  });
+  
+  $('.nav-btn').on('click', function(){
+    $('.nav__inner').slideToggle();
+  });
+
+  AOS.init({
+    once: true,
+    duration: 1000,
+    delay: 300,
+    offset: 0,
+    anchorPlacement: 'bottom-bottom'
+  });
 
 
 });
